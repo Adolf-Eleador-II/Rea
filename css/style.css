@@ -1,0 +1,49 @@
+
+*{
+    font-family: "Calibri";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.centerAlignment{
+    justify-content: center;
+}
+
+.rightAlignment{
+    justify-content: right;
+}
+
+.leftAlignment{
+    justify-content: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

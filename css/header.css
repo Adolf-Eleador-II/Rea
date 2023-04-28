@@ -1,0 +1,20 @@
+
+.logoHeader{
+    background-color: yellowgreen;
+    padding: 10px 75px;
+    gap: 50px;
+}
+
+.imgLogoHeader{
+    height: 100px;
+}
+
+.listHeader{
+    padding: 5px 75px;
+    background-color: yellow;
+}
+
+.pagesListHeader{
+    gap: 50px;
+}
+
