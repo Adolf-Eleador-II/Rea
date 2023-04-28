@@ -1,0 +1,13 @@
+
+
+.form{
+    background-color: white;
+    margin: 80px;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.regForm{
+    gap: 10px;
+}
