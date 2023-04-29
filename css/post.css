@@ -1,6 +1,21 @@
 
-.posts{ margin:  25px; min-width: 417px; max-width: 832px; }
+.main{
+    max-width: 832px;
+    margin: 25px;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    /* margin: 25px; */
+    /* max-width: 832px; */
+    min-width: 417px;
+    gap: 50px;
+}
 .post{
+    display: flex;
+    flex-direction: column;
+
     padding: 10px 15px;
     background-color: #f1f1f1;
     font-size: 15px;
@@ -9,7 +24,11 @@
     border: 1px solid black;
     border-radius: 5px;
 }
-.containerPost{ gap: 5px;}
+.containerPost{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .headerPost{
     padding: 5px;
     gap: 10px;
@@ -21,15 +40,19 @@
 .contentPost{
     gap: 5px;
     overflow: hidden;
-    max-height: 3500px; }
+    max-height: 350px; }
 /* .imgPost{ max-width: 100%; } */
-.unwrap{ height: 0; transform: translateY(-26px); }
+.unwrap{ height: 0; transform: translateY(-36px); }
 .unwrapButton{ width: 100%; background-color: #fffffff0; }
 .footherPost{ gap: 35px; }
 
 
 
-.commentsPost{ gap: 5px; }
+.commentsPost{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .commentPost{ margin: 5px 0 0px 10%; }
 .containerCommentPost{
     padding: 10px;
