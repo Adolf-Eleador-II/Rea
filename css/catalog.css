@@ -1,12 +1,50 @@
 
-
-.catalog{
-    margin: 25px;
-
+.sectionCatalog{/*~=sectionPost*/
+    margin: 10px;
 }
-.tagContentCatalog{
-    background-color: rgb(0, 237, 237);
+
+.catalogs{/*==posts*/
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 25px;
+
+    /* padding: 10px 15px;
+    background-color: #f1f1f1;
     border: 1px solid black;
-    width: 150px;
+    border-radius: 10px; */
+}
+.catalog{/*~=post*/
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+    
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    border-radius: 10px;/*~*/
+}
+.tagsCatalog{/*~=contentPost*/
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tagCatalog{/*~~headerPost*/
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0 10px 10px 0;
+    min-width: 150px;
     height: 50px;
+}
+.imgTagCatalog{
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }

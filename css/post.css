@@ -1,26 +1,23 @@
 
-.main{
-    max-width: 832px;
-    margin: 25px;
+.sectionPost{
+    max-width: 832px;/*~*/
+    margin: 10px;
 }
 
 .posts{
     display: flex;
     flex-direction: column;
-    /* margin: 25px; */
-    /* max-width: 832px; */
     min-width: 417px;
     gap: 50px;
 }
 .post{
     display: flex;
     flex-direction: column;
-
-    padding: 10px 15px;
-    background-color: #f1f1f1;
     font-size: 15px;
     gap: 10px;
     
+    padding: 10px 15px;
+    background-color: #f1f1f1;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -30,21 +27,29 @@
     gap: 5px;
 }
 .headerPost{
+    display: flex;
+    flex-direction: row;
     padding: 5px;
     gap: 10px;
     background-color: white;
     border-radius: 5px;
     margin-bottom: 5px;
 }
-.imgAvatarPost{ width: 50px; } /*Автозамену аватарки*/
+.imgAvatarPost{ max-width: 50px; height: 50px;} /*Автозамену аватарки*/
 .contentPost{
+    display: flex;
+    flex-direction: column;
     gap: 5px;
     overflow: hidden;
     max-height: 350px; }
 /* .imgPost{ max-width: 100%; } */
 .unwrap{ height: 0; transform: translateY(-36px); }
 .unwrapButton{ width: 100%; background-color: #fffffff0; }
-.footherPost{ gap: 35px; }
+.footherPost{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
 
 
 
@@ -61,13 +66,19 @@
     border-radius: 5px 0 0 5px;
     border-right: 0px;
 }
-.contentCommentPost{ gap: 5px; }
-/* .imgCommentPost{ max-width: 100%; } */
 .headerCommentPost{
+    display: flex;
+    flex-direction: row;
     gap: 10px;
     background-color: white;
     border-radius: 5px;
 }
+.contentCommentPost{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* .imgCommentPost{ max-width: 100%; } */
 .imgAvatarCommentPost{ width: 50px; } /*Автозамену аватарки*/
 
 

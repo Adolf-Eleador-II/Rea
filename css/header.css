@@ -1,5 +1,7 @@
 
 .logoHeader{
+    display: flex;
+    flex-direction: row;
     background-color: yellowgreen;
     padding: 10px 75px;
     gap: 50px;
@@ -11,11 +13,16 @@
 }
 
 .listHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 5px 75px;
     background-color: yellow;
 }
 
 .pagesListHeader{
+    display: flex;
+    flex-direction: row;
     gap: 50px;
 }
 
