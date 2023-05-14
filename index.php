@@ -71,18 +71,12 @@
                     <div class="post">
                         <div class="containerPost">
                             <div class="headerPost">
-                                <img src="img/1000.png" class="imgAvatarPost">
+                                <img src="img/Duck.gif" class="imgAvatarPost">
                                 <p class="textPost">Cow Master</p>
                             </div>
                             <div class="contentPost">
-                                <div class="imgPost"><img src="img/1000.png"></div>
-                                <div class="imgPost"><img src="img/Togetha.png"></div>
-                                <div class="textPost"><h1>Rykard, Lord of Blasphemy</h1><p>Now, we can devour the gods, together!</p><p>Together, we will devour the very gods!</p></div>
-                                <div class="imgPost"><img src="img/50.png"></div>
+                                <div class="imgPost"><img src="img/Duck.gif"></div>
                             </div>
-                            <!-- <div class="unwrap">
-                                <button class="unwrapButton">Развернуть</button>
-                            </div> -->
                             <div class="footherPost">
                                 <button>Коментарии</button>
                                 <div>Дата публикации</div>
@@ -90,76 +84,91 @@
                                 <div>Рейтинг</div>
                             </div>
                         </div>
-                        
-
-
-
-                        <!-- All -->
-                            <div class="commentsPost">
-                                <!-- 0 -->
-                                    <div class="commentPost">
-                                        <div class="containerCommentPost">
-                                            <div class="headerCommentPost">
-                                                <img src="img/1000.png" class="imgAvatarCommentPost">
-                                                <p class="textCommentPost">Cow Master I</p>
-                                            </div>
-                                            <div class="contentCommentPost">
-                                                <div class="textCommentPost"><p>Now, we can devour the gods, together!</p></div>
-                                                <div class="imgCommentPost"><img src="img/Togetha.png"></div>
-                                            </div>
+                        <div class="commentsPost"></div>
+                    </div>
+                    <div class="post">
+                        <div class="containerPost">
+                            <div class="headerPost">
+                                <img src="img/GunInEyes.png" class="imgAvatarPost">
+                                <p class="textPost">Cow Master</p>
+                            </div>
+                            <div class="contentPost">
+                                <div class="imgPost"><img src="img/Togetha.png"></div>
+                                <div class="textPost"><h1>Rykard, Lord of Blasphemy</h1><p>Now, we can devour the gods, together!</p><p>Together, we will devour the very gods!</p></div>
+                                <div class="imgPost"><img src="img/GunInEyes.png"></div>
+                                <div class="imgPost"><img src="img/50.png"></div>
+                            </div>
+                            <div class="footherPost">
+                                <button>Коментарии</button>
+                                <div>Дата публикации</div>
+                                <div>Ссылка</div>
+                                <div>Рейтинг</div>
+                            </div>
+                        </div>
+                        <div class="commentsPost">
+                            <!-- 0 -->
+                                <div class="commentPost">
+                                    <div class="containerCommentPost">
+                                        <div class="headerCommentPost">
+                                            <img src="img/GunInEyes.png" class="imgAvatarCommentPost">
+                                            <p class="textCommentPost">Cow Master I</p>
                                         </div>
-
-                                        <div class="commentsPost">
-                                        <!-- 1 -->
-                                            <div class="commentPost">
-                                                <div class="containerCommentPost">
-                                                    <div class="headerCommentPost">
-                                                        <img src="img/1000.png" class="imgAvatarCommentPost">
-                                                        <p class="textCommentPost">Cow Master II</p>
-                                                    </div>
-                                                    <div class="contentCommentPost">
-                                                        <div class="textCommentPost"><p>Together, we will devour the very gods!</p></div>
-                                                        <div class="imgCommentPost"><img src="img/50.png"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentsPost"></div>
-                                            </div>
-                                        <!--  -->
+                                        <div class="contentCommentPost">
+                                            <div class="textCommentPost"><p>Now, we can devour the gods, together!</p></div>
+                                            <div class="imgCommentPost"><img src="img/Togetha.png"></div>
                                         </div>
                                     </div>
-                                <!--  -->
-                                <!-- 2 -->
-                                    <div class="commentPost">
-                                        <div class="containerCommentPost">
-                                            <div class="headerCommentPost">
-                                                <img src="img/1000.png" class="imgAvatarCommentPost">
-                                                <p class="textCommentPost">Cow Master I</p>
-                                            </div>
-                                            <div class="contentCommentPost">
-                                                <div class="textCommentPost"><p>Now, we can devour the gods, together!</p></div>
-                                                <div class="imgCommentPost"><img src="img/Togetha.png"></div>
-                                            </div>
-                                        </div>
 
-                                        <div class="commentsPost">
-                                        <!-- 3 -->
-                                            <div class="commentPost">
-                                                <div class="containerCommentPost">
-                                                    <div class="headerCommentPost">
-                                                        <img src="img/1000.png" class="imgAvatarCommentPost">
-                                                        <p class="textCommentPost">Cow Master II</p>
-                                                    </div>
-                                                    <div class="contentCommentPost">
-                                                        <div class="textCommentPost"><p>Together, we will devour the very gods!</p></div>
-                                                        <div class="imgCommentPost"><img src="img/50.png"></div>
-                                                    </div>
+                                    <div class="commentsPost"></div>
+                                </div>
+                            <!--  -->
+                            <!-- 2 -->
+                                <div class="commentPost">
+                                    <div class="containerCommentPost">
+                                        <div class="headerCommentPost">
+                                            <img src="img/GunInEyes.png" class="imgAvatarCommentPost">
+                                            <p class="textCommentPost">Cow Master I</p>
+                                        </div>
+                                        <div class="contentCommentPost">
+                                            <div class="textCommentPost"><p>Now, we can devour the gods, together!</p></div>
+                                            <div class="imgCommentPost"><img src="img/Togetha.png"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="commentsPost">
+                                    <!-- 3 -->
+                                        <div class="commentPost">
+                                            <div class="containerCommentPost">
+                                                <div class="headerCommentPost">
+                                                    <img src="img/GunInEyes.png" class="imgAvatarCommentPost">
+                                                    <p class="textCommentPost">Cow Master II</p>
                                                 </div>
-                                                <div class="commentsPost">
-                                                    <!-- 4 -->
+                                                <div class="contentCommentPost">
+                                                    <div class="textCommentPost"><p>Together, we will devour the very gods!</p></div>
+                                                    <div class="imgCommentPost"><img src="img/50.png"></div>
+                                                </div>
+                                            </div>
+                                            <div class="commentsPost">
+                                                <!-- 4 -->
+                                                <div class="commentPost">
+                                                    <div class="containerCommentPost">
+                                                        <div class="headerCommentPost">
+                                                            <img src="img/GunInEyes.png" class="imgAvatarCommentPost">
+                                                            <p class="textCommentPost">Cow Master II</p>
+                                                        </div>
+                                                        <div class="contentCommentPost">
+                                                            <div class="textCommentPost"><p>Together, we will devour the very gods!</p></div>
+                                                            <div class="imgCommentPost"><img src="img/50.png"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="commentsPost"></div>
+                                                </div>
+                                                <!--  -->
+                                                <!-- 5 -->
                                                     <div class="commentPost">
                                                         <div class="containerCommentPost">
                                                             <div class="headerCommentPost">
-                                                                <img src="img/1000.png" class="imgAvatarCommentPost">
+                                                                <img src="img/GunInEyes.png" class="imgAvatarCommentPost">
                                                                 <p class="textCommentPost">Cow Master II</p>
                                                             </div>
                                                             <div class="contentCommentPost">
@@ -169,47 +178,28 @@
                                                         </div>
                                                         <div class="commentsPost"></div>
                                                     </div>
-                                                    <!--  -->
-                                                    <!-- 5 -->
-                                                        <div class="commentPost">
-                                                            <div class="containerCommentPost">
-                                                                <div class="headerCommentPost">
-                                                                    <img src="img/1000.png" class="imgAvatarCommentPost">
-                                                                    <p class="textCommentPost">Cow Master II</p>
-                                                                </div>
-                                                                <div class="contentCommentPost">
-                                                                    <div class="textCommentPost"><p>Together, we will devour the very gods!</p></div>
-                                                                    <div class="imgCommentPost"><img src="img/50.png"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="commentsPost"></div>
-                                                        </div>
-                                                    <!--  -->
-                                                </div>
+                                                <!--  -->
                                             </div>
-                                        <!--  -->
                                         </div>
+                                    <!--  -->
                                     </div>
-                                <!--  -->
-                            
-                            </div>
-                        <!--  -->
+                                </div>
+                            <!--  -->
+                        
+                        </div>
                     </div>
                     <div class="post">
                         <div class="containerPost">
                             <div class="headerPost">
-                                <img src="img/1000.png" class="imgAvatarPost">
+                                <img src="img/GunInEyes.png" class="imgAvatarPost">
                                 <p class="textPost">Cow Master</p>
                             </div>
                             <div class="contentPost">
                                 <div class="imgPost"><img src="img/Togetha.png"></div>
                                 <div class="textPost"><h1>Rykard, Lord of Blasphemy</h1><p>Now, we can devour the gods, together!</p><p>Together, we will devour the very gods!</p></div>
-                                <div class="imgPost"><img src="img/1000.png"></div>
+                                <div class="imgPost"><img src="img/GunInEyes.png"></div>
                                 <div class="imgPost"><img src="img/50.png"></div>
                             </div>
-                            <!-- <div class="unwrap">
-                                <button class="unwrapButton">Развернуть</button>
-                            </div> -->
                             <div class="footherPost">
                                 <button>Коментарии</button>
                                 <div>Дата публикации</div>
@@ -217,35 +207,7 @@
                                 <div>Рейтинг</div>
                             </div>
                         </div>
-                        <!-- All -->
-                            <div class="commentsPost"></div>
-                        <!--  -->
-                    </div>
-                    <div class="post">
-                        <div class="containerPost">
-                            <div class="headerPost">
-                                <img src="img/Duck.gif" class="imgAvatarPost">
-                                <p class="textPost">Cow Master</p>
-                            </div>
-                            <div class="contentPost">
-                                <div class="imgPost"><img src="img/Duck.gif"></div>
-                                <div class="textPost"><h1>Rykard, Lord of Blasphemy</h1><p>Now, we can devour the gods, together!</p><p>Together, we will devour the very gods!</p></div>
-                                <div class="imgPost"><img src="img/200.png"></div>
-                                <div class="imgPost"><img src="img/50.png"></div>
-                            </div>
-                            <!-- <div class="unwrap">
-                                <button class="unwrapButton">Развернуть</button>
-                            </div> -->
-                            <div class="footherPost">
-                                <button>Коментарии</button>
-                                <div>Дата публикации</div>
-                                <div>Ссылка</div>
-                                <div>Рейтинг</div>
-                            </div>
-                        </div>
-                        <!-- All -->
-                            <div class="commentsPost"></div>
-                        <!--  -->
+                        <div class="commentsPost"></div>
                     </div>
                 </div>        
             </section>

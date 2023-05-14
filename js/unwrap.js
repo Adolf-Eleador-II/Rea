@@ -1,22 +1,32 @@
-
 let i;
-let contentPosts = document.querySelectorAll(".contentPost");
-for(i = 0; i < contentPosts.length; i++){
-    if(contentPosts[i].clientHeight > 350 && contentPosts[i].querySelectorAll("div").length > 1){
-        contentPosts[i].setAttribute("style","max-height: 350px;");
+
+//Скрытие излишнего контента и добавление кнопки вскрытия контента
+let contentPost = document.querySelectorAll(".contentPost");
+for(i = 0; i < contentPost.length; i++){
+    if(contentPost[i].clientHeight > 350 && contentPost[i].querySelectorAll("div").length > 1){
+        contentPost[i].setAttribute("style","max-height: 350px;");
         let div = document.createElement("div");
-        div.className = "unwrap";
-        div.innerHTML = "<button class=\"unwrapButton\">Развернуть</button>";
-        contentPosts[i].after(div);
+        div.className = "unwrapContentPost";
+        div.innerHTML = "<button>Развернуть</button>";
+        div.querySelector("button").onclick = function(){
+            this.closest(".containerPost").querySelector(".contentPost").setAttribute("style","max-height: auto;");
+            this.closest(".unwrapContentPost").remove();
+        }
+        contentPost[i].after(div);
     }
 }
 
-let j;
-let unwrapButton = document.querySelectorAll(".unwrapButton");
-for(j = 0; j < unwrapButton.length; j++){
-    unwrapButton[j].onclick = function(){
-        this.closest(".containerPost").querySelector(".contentPost").setAttribute("style","max-height: auto;");
-        this.closest(".unwrap").remove();
-    }
+//Переключатель скрытия комментов
+let buttonCommentsPost = document.querySelectorAll(".footherPost>button");
+for(i = 0; i < buttonCommentsPost.length; i++){
+    buttonCommentsPost[i].onclick = function() {wrapComments(this)};
+    buttonCommentsPost[i].click();
 }
- 
+function wrapComments(button){
+    button.closest(".post").querySelector(".commentsPost").setAttribute("style","display: none;");
+    button.onclick = function() {unwrapComments(this)};
+}
+function unwrapComments(button){
+    button.closest(".post").querySelector(".commentsPost").setAttribute("style","display: flex;");
+    button.onclick = function() {wrapComments(this)};
+}

@@ -44,15 +44,20 @@
     /* max-height: 350px; */
 }
 /* .imgPost{ max-width: 100%; } */
-.unwrap{ height: 0; transform: translateY(-36px); }
-.unwrapButton{ width: 100%; background-color: #fffffff0; }
+.unwrapContentPost{ height: 0; transform: translateY(-36px); }
+.unwrapContentPost button{ width: 100%; background-color: #fffffff0; }
 .footherPost{
+    border-top: 1px solid black;
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
     gap: 35px;
 }
-
-
+.footherPost button{
+    background: #ffcc00;
+    margin: 0;
+    border-radius: 10px;
+}
 
 .commentsPost{
     display: flex;
