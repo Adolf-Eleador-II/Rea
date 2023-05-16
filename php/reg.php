@@ -13,7 +13,7 @@
 
     mysqli_query(
     $dbConnection, 
-    "INSERT INTO `User` (`nameUser`, `emailUser`, `passUser`, `avatarUser`) 
+    "INSERT INTO User (`name`, email, pass, avatar) 
         VALUES ('$nameUser', '$emailUser', '$passUser', '$pathUser')"
     );
 

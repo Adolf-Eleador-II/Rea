@@ -19,30 +19,17 @@
     <body style="background-color: antiquewhite;">
         
         
-        <?php if(isset($_SESSION['user'])):?>
-            <div class="userHeader row" style="padding: 5px 75px; background-color: rgb(251, 0, 255);">
-                <div class="row">
-                    <img class="imgAvatarPost" id="avatarUserPasture" src="<?=$_SESSION['user']['avatar']?>" onerror="this.src='img/avatar.png'">
-                    <div class="column">
-                        
-                        <p id="nameUserPasture"><?=$_SESSION['user']['name']?></p>
-                        <p id="idUserPasture"><?=$_SESSION['user']['id']?></p>
-                    
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
+        
 
         <header class="header">
             <div class="logoHeader">
                 <div>
-                    <img src="img/CowAndClick.svg" class="imgLogoHeader">
                     <img src="img/chicken.svg" class="imgLogoHeader">
                 </div>
                 <div class="column">
                     <h1>No gods</h1>
                     <h1>No kings</h1>
-                    <h1>Only cows and chickens</h1>
+                    <h1>Only chickens</h1>
 
                     <!-- <h1>And You: </h1> -->
                 </div>
@@ -219,98 +206,114 @@
 
 
             
-            <section class="sectionCatalog">
-                <div class="catalogs">
+                
+                <section class="sectionCatalog column" style="gap:15px;">
+                    <?php if(isset($_SESSION['user'])):?>
                     <div class="catalog">
-                        <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
-                        <div class="tagsCatalog">
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/50.png"></div>
-                                <div class="nameTagCatalog">Dog</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/200.png"></div>
-                                <div class="nameTagCatalog">Fish</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
-                                <div class="nameTagCatalog">Cat</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
-                                <div class="nameTagCatalog">Duck</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
-                                <div class="nameTagCatalog">Pinguin</div>
-                            </div>
-                            <div class="footherCatalog">
-                                Показать все
+                        <div class="userHeader row" style="background-color: rgb(251, 0, 255);">
+                            <div class="row">
+                                <img class="imgAvatarPost" id="avatarUserPasture" src="<?=$_SESSION['user']['avatar']?>" onerror="this.src='img/avatar.png'">
+                                <div class="column">
+                                    
+                                    <div id="nameUserPasture"><?=$_SESSION['user']['name']?></div>
+                                    <div id="idUserPasture"><?=$_SESSION['user']['id']?></div>
+                                
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="catalog">
-                        <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
-                        <div class="tagsCatalog">
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/50.png"></div>
-                                <div class="nameTagCatalog">Dog</div>
+                    <?php endif; ?>
+                    <div class="catalogs">
+                        <div class="catalog">
+                            <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
+                            <div class="tagsCatalog">
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/50.png"></div>
+                                    <div class="nameTagCatalog">Dog</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/200.png"></div>
+                                    <div class="nameTagCatalog">Fish</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
+                                    <div class="nameTagCatalog">Cat</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
+                                    <div class="nameTagCatalog">Duck</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
+                                    <div class="nameTagCatalog">Pinguin</div>
+                                </div>
+                                <div class="footherCatalog">
+                                    Показать все
+                                </div>
                             </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/200.png"></div>
-                                <div class="nameTagCatalog">Fish</div>
+                        </div>
+                        <div class="catalog">
+                            <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
+                            <div class="tagsCatalog">
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/50.png"></div>
+                                    <div class="nameTagCatalog">Dog</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/200.png"></div>
+                                    <div class="nameTagCatalog">Fish</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
+                                    <div class="nameTagCatalog">Cat</div>
+                                </div>
+                                <div class="footherCatalog">
+                                    Показать все
+                                </div>
                             </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
-                                <div class="nameTagCatalog">Cat</div>
+                        </div>
+                        <div class="catalog">
+                            <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
+                            <div class="tagsCatalog">
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/50.png"></div>
+                                    <div class="nameTagCatalog">Dog</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/200.png"></div>
+                                    <div class="nameTagCatalog">Fish</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
+                                    <div class="nameTagCatalog">Cat</div>
+                                </div>
+                                <div class="footherCatalog">
+                                    Показать все
+                                </div>
                             </div>
-                            <div class="footherCatalog">
-                                Показать все
+                        </div>
+                        <div class="catalog">
+                            <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
+                            <div class="tagsCatalog">
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/50.png"></div>
+                                    <div class="nameTagCatalog">Dog</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/200.png"></div>
+                                    <div class="nameTagCatalog">Fish</div>
+                                </div>
+                                <div class="tagCatalog">
+                                    <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
+                                    <div class="nameTagCatalog">Cat</div>
+                                </div>
+                                <div class="footherCatalog">
+                                    Показать все
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="catalog">
-                        <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
-                        <div class="tagsCatalog">
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/50.png"></div>
-                                <div class="nameTagCatalog">Dog</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/200.png"></div>
-                                <div class="nameTagCatalog">Fish</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
-                                <div class="nameTagCatalog">Cat</div>
-                            </div>
-                            <div class="footherCatalog">
-                                Показать все
-                            </div>
-                        </div>
-                    </div>
-                    <div class="catalog">
-                        <div class="headerCatalog"><h1>Animal</h1><hr><br></div>
-                        <div class="tagsCatalog">
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/50.png"></div>
-                                <div class="nameTagCatalog">Dog</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/200.png"></div>
-                                <div class="nameTagCatalog">Fish</div>
-                            </div>
-                            <div class="tagCatalog">
-                                <div class="imgTagCatalog"><img src="img/Duck.gif"></div>
-                                <div class="nameTagCatalog">Cat</div>
-                            </div>
-                            <div class="footherCatalog">
-                                Показать все
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
         </div>
 
 

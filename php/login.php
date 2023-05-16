@@ -7,7 +7,7 @@
 
 	$check_user = mysqli_query(
 		$dbConnection, 
-		"SELECT * FROM `User` WHERE `nameUser` = '$nameUser' AND `passUser` = '$passUser'"
+		"SELECT * FROM User WHERE `name` = '$nameUser' AND pass = '$passUser'"
 	);
 
 	if (mysqli_num_rows($check_user) === 0) {
@@ -19,9 +19,9 @@
 	$user = mysqli_fetch_assoc($check_user);
 	$_SESSION['user'] = [
 		"id" => $user['idUser'],
-		"name" => $user['nameUser'],
-		"email" => $user['emailUser'],
-		"avatar" => $user['avatarUser']
+		"name" => $user['name'],
+		"email" => $user['email'],
+		"avatar" => $user['avatar']
 	];
 
 	header('Location: ../index.php');
