@@ -16,13 +16,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px 75px;
+    padding: 0px 75px;
     background-color: yellow;
 }
 
 .pagesListHeader{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 5px;
 }
 
+.pagesListHeader button{
+    border: solid 0 black;
+    background-color: #ffffaa;
+}

@@ -18,10 +18,10 @@
 
 	$user = mysqli_fetch_assoc($check_user);
 	$_SESSION['user'] = [
-		"idUser" => $user['idUser'],
-		"nameUser" => $user['nameUser'],
-		"emailUser" => $user['emailUser'],
-		"avatarUser" => $user['avatarUser']
+		"id" => $user['idUser'],
+		"name" => $user['nameUser'],
+		"email" => $user['emailUser'],
+		"avatar" => $user['avatarUser']
 	];
 
 	header('Location: ../index.php');

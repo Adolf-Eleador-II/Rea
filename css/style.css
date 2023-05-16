@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    min-width: min-content;
+}
 
 
 
@@ -76,3 +79,4 @@ button.active{
 hr{
     border: 1px solid #000000;
 }
+

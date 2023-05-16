@@ -15,6 +15,7 @@
                                 <div class="nameTagCatalog"><?=$tag['name']?></div>
                             </div>
                         <?php endforeach?>
+                        <!-- catalogs -> tags -->
                         <div class="footherCatalog">
                             Показать все
                         </div>

@@ -41,7 +41,6 @@
     flex-direction: column;
     gap: 5px;
     overflow: hidden;
-    /* max-height: 350px; */
 }
 /* .imgPost{ max-width: 100%; } */
 .unwrapContentPost{ height: 0; transform: translateY(-36px); }
@@ -60,7 +59,6 @@
 }
 
 .commentsPost{
-    display: flex;
     flex-direction: column;
     gap: 5px;
 }
