@@ -26,19 +26,4 @@
         </div>
         <?php endif; ?>
     </div>
-    <?php if(isset($_SESSION['user'])):?>
-            <div style="padding: 10px;">
-                <div class="userHeader row" style="background-color: rgb(251, 0, 255);">
-                    <div class="row">
-                        <img class="imgAvatarPost" id="avatarUserPasture" src="<?=$_SESSION['user']['avatar']?>" onerror="this.src='img/avatar.png'">
-                        <div class="column">
-                            
-                            <div id="nameUserPasture"><?=$_SESSION['user']['name']?></div>
-                            <div id="idUserPasture"><?=$_SESSION['user']['id']?></div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
 </header>

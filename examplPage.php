@@ -164,8 +164,8 @@
                                                                 <p class="textCommentPost">Cow Master II</p>
                                                             </div>
                                                             <div class="contentCommentPost">
-                                                                <div class="textCommentPost"><p>Together, we will devour the very gods!</p></div>
-                                                                <div class="imgCommentPost"><img src="img/50.png"></div>
+                                                                <div class="textCommentPost"><p>Gun In My Eyes!</p></div>
+                                                                <div class="imgCommentPost"><img src="img/GunInEyes.png"></div>
                                                             </div>
                                                         </div>
                                                         <div class="commentsPost"></div>

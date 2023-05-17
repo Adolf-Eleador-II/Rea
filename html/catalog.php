@@ -12,7 +12,12 @@
 
 
 <div class="catalogs" id="">
-    <!-- AllCatalogs -> catalogs -> catalog -->
+    <!-- user -->
+    <?php include 'html/user.php'?>
+
+
+
+    <!-- Main Tags -->
     <div class="catalog" style="background-color: #ff0;">
         <div class="headerCatalog"><h1>Main Tags</h1><hr><br></div>
         <div class="tagsCatalog">
@@ -57,27 +62,4 @@
 
 </div>
 
-
-
-<!--
-
-    < ?php foreach($catalogList as $catalog):?>
-        <div class="catalog" id="< ?=$catalog['id']?>">
-            <div class="headerCatalog"><h1>< ?=$catalog['nameCatalog']?></h1><hr><br></div>
-            <div class="tagsCatalog">
-                < ?php foreach($tagList as $tag):?>
-                    <div class="tagCatalog" id="< ?=$tag['id']?>">
-                        <div class="imgTagCatalog"><img src="< ?=$tag['img']?>"></div>
-                        <div class="nameTagCatalog">< ?=$tag['name']?></div>
-                    </div>
-                < ?php endforeach?>
-                < !-- catalogs -> tags -- >
-                <div class="footherCatalog">
-                    Показать все
-                </div>
-            </div>
-        </div>
-    < ?php endforeach?>
-
--->
 
