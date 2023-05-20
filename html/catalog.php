@@ -11,9 +11,6 @@
 ?>
 
 
-<div class="catalogs" id="">
-    <!-- user -->
-    <?php include 'html/user.php'?>
 
 
 
@@ -60,6 +57,5 @@
 
 
 
-</div>
 
 

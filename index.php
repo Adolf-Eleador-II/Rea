@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/post.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/catalog.css">
+        <link rel="stylesheet" href="css/textInput.css">
         <link rel="stylesheet" href="css/user.css">
     </head>
 
@@ -24,11 +25,19 @@
         
         <div class="row centerAlignment">
             <section class="sectionPost">
-                <?php include 'html/post.php'?>
+                <div class="posts">
+                    <?php if(isset($_SESSION['user'])):?>
+                        <?php include 'html/textInput.html'?>
+                    <?php endif;?>
+                    <?php include 'html/post.php'?>
+                </div>
             </section>  
 
             <section class="sectionCatalog">
-                <?php include 'html/catalog.php'?>
+                <div class="catalogs">
+                    <?php include 'html/user.php'?>
+                    <?php include 'html/catalog.php'?>
+                </div>
             </section>
         </div>
 
@@ -42,7 +51,8 @@
             <?php include 'html/login.html'?>
             <?php include 'html/reg.html'?>
         <?php endif;?>
-        <script src="js/unwrap.js"   type="text/javascript"></script>
+        <script src="js/unwrap.js" type="text/javascript"></script>
+        <script src="js/textInput.js" type="text/javascript"></script>
         <script src="js/form.js"   type="text/javascript"></script>
     </body>
 

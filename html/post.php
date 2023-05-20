@@ -15,14 +15,14 @@
         Tag.idTag=Tag_Post.idTag and Tag_Post.idPost=Post.idPost) AS 'tagsPost'
         
         FROM Post
-        LEFT JOIN User ON Post.idUser=User.idUser"
+        LEFT JOIN User ON Post.idUser=User.idUser
+        ORDER BY Post.data DESC"
     );
 ?>
 
 
 <!-- Название тега -->
 <!-- <div class="headerSectionPost"><h1>Tag name</h1><hr><br></div> -->
-<div class="posts">
     <?php foreach($postsList as $post):?>
         <div class="post" id_post="<?=$post['idPost']?>">
             <div class="containerPost">
@@ -50,6 +50,5 @@
 
         </div>
     <?php endforeach?>
-</div>
 
 

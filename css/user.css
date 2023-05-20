@@ -1,6 +1,6 @@
 
 .user{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     font-size: 15px;
     gap: 10px;
@@ -9,6 +9,7 @@
     background-color: #f1f1f1;
     border: 1px solid black;
     border-radius: 10px;
+
 }
 .headerUser{
     display: flex;
@@ -16,5 +17,5 @@
     gap: 10px;
 }
 .imgAvatarUser{
-    width: 50px;
+    width: 152px;
 }

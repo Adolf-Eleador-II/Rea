@@ -11,9 +11,9 @@
     </div>
     <div class="listHeader">
         <div class="pagesListHeader">
-            <button>Лента</button>
+            <!-- <button>Лента</button>
             <button>Обсуждаемое</button>
-            <button>Люди</button>
+            <button>Люди</button> -->
         </div>
         <?php if(isset($_SESSION['user'])):?>
         <div class="pagesListHeader">
