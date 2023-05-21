@@ -23,7 +23,7 @@
 
 
         
-        <div class="row centerAlignment">
+        <div class="main">
             <section class="sectionPost">
                 <div class="posts">
                     <?php if(isset($_SESSION['user'])):?>
