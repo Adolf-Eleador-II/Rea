@@ -22,8 +22,8 @@
     if($content != ''){
         mysqli_query(
             $dbConnection, 
-            "INSERT INTO TestPost (content, idUser) 
-                VALUES ('$content','$user')"
+            "INSERT INTO Post (content, idUser, rating) 
+                VALUES ('$content','$user','0')"
         );
         
         $idPost = mysqli_insert_id($dbConnection);
@@ -47,7 +47,7 @@
         foreach($arrayTag as $idTag){
             mysqli_query(
             $dbConnection, 
-            "INSERT INTO Tag_Post_Test (idPost, idTag) 
+            "INSERT INTO Tag_Post (idPost, idTag) 
                 VALUES ('$idPost','$idTag')"
             );
         }
