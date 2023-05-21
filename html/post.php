@@ -14,8 +14,7 @@
         (SELECT GROUP_CONCAT('<div id=',Tag.idTag,'>',Tag.name,'</div>' SEPARATOR '') FROM Tag, Tag_Post WHERE
         Tag.idTag=Tag_Post.idTag and Tag_Post.idPost=Post.idPost) AS 'tagsPost'
         
-        FROM Post
-        LEFT JOIN User ON Post.idUser=User.idUser
+        FROM Post, User WHERE Post.idUser=User.idUser
         ORDER BY Post.data DESC"
     );
 ?>
