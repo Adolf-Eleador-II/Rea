@@ -27,7 +27,7 @@
             <section class="sectionPost">
                 <div class="posts">
                     <?php if(isset($_SESSION['user'])):?>
-                        <?php include 'html/textInput.html'?>
+                        <?php include 'html/textInput.php'?>
                     <?php endif;?>
                     <?php include 'html/post.php'?>
                 </div>

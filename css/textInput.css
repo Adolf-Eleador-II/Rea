@@ -50,3 +50,13 @@ textarea{
     gap: 5px;
     overflow: hidden;
 }
+.tagsTextInput{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.selectsTag{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

@@ -21,11 +21,38 @@
     
     if($content != ''){
         mysqli_query(
-        $dbConnection, 
-        "INSERT INTO Post (content, idUser, rating) 
-            VALUES ('$content','$user','0')"
+            $dbConnection, 
+            "INSERT INTO TestPost (content, idUser) 
+                VALUES ('$content','$user')"
         );
+        
+        $idPost = mysqli_insert_id($dbConnection);
+
+
+        $tag = '';
+        for($i=0;;$i++){
+            if($_POST['select_' . $i . '_tag_0']){
+                for($j=0;;$j++){
+                    if($_POST['select_' . $i . '_tag_' . $j]){
+                        $tag .= $_POST['select_' . $i . '_tag_' . $j] . ' ';
+                    }
+                    else{ break; }
+                }
+            }
+            else{ break; }
+        }
+        $arrayTag = explode(' ',$tag);
+        $arrayTag = array_unique($arrayTag);
+
+        foreach($arrayTag as $idTag){
+            mysqli_query(
+            $dbConnection, 
+            "INSERT INTO Tag_Post_Test (idPost, idTag) 
+                VALUES ('$idPost','$idTag')"
+            );
+        }
     }
+
 
     header('Location: ../index.php');
     return;
