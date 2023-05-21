@@ -20,9 +20,6 @@
 
     <body style="background-color: antiquewhite;">
         <?php include 'html/header.php'?>
-
-
-        
         <div class="main">
             <section class="sectionPost">
                 <div class="posts">
@@ -31,7 +28,7 @@
                     <?php endif;?>
                     <?php include 'html/post.php'?>
                 </div>
-            </section>  
+            </section>
 
             <section class="sectionCatalog">
                 <div class="catalogs">
@@ -40,10 +37,6 @@
                 </div>
             </section>
         </div>
-
-
-
-
 
         <?php if(isset($_SESSION['user'])):?>
             <?php include 'html/logout.html'?>

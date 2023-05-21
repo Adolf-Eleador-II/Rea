@@ -1,32 +1,9 @@
 
-.logoHeader{
-    display: flex;
-    flex-direction: row;
-    background-color: yellowgreen;
-    padding: 10px 75px;
-    gap: 50px;
-}
 
-.imgLogoHeader{
-    height: 100px;
-    width: 100px;
-}
+.fonLogoHeader{ background-color: yellowgreen; }
+.imgLogoHeader{ height: 100px; width: 100px; }
+.fonBarHeader{ background-color: yellow; }
+.barHeader{ display: flex; flex-direction: row; width: 100%; justify-content: right; }
+.buttonBarHeader{ display: flex; flex-direction: row; gap: 5px; }
+.buttonBarHeader button{ border: solid 0 black; background-color: #ffffaa; }
 
-.listHeader{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 75px;
-    background-color: yellow;
-}
-
-.pagesListHeader{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.pagesListHeader button{
-    border: solid 0 black;
-    background-color: #ffffaa;
-}

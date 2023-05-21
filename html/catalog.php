@@ -16,7 +16,7 @@
 
     <!-- Main Tags -->
     <div class="catalog" style="background-color: #ff0;">
-        <div class="headerCatalog"><h1>Main Tags</h1><hr><br></div>
+        <div class="headerCatalog"><h1>Main Tags</h1><hr></div>
         <div class="tagsCatalog">
             <?php foreach($mainTagList as $tag):?>
                 <div class="tagCatalog"><div class="imgTagCatalog"><img src="" onerror="this.src='img/TestImgTag.png'"></div><div class="column"><p><?=$tag['name']?></p><p>ID tag: <?=$tag['idTag']?></p></div></div>
@@ -30,7 +30,7 @@
     
     <?php foreach($mainTagList as $tag):?>
     <div class="catalog">
-        <div class="headerCatalog"><h1>Tag: <?=$tag['name']?></h1><hr><br></div>
+        <div class="headerCatalog"><h1>Tag: <?=$tag['name']?></h1><hr></div>
         <div class="tagsCatalog">
             <?php require_once './php/dbConnect.php';
                 $popularTagList = mysqli_query(
