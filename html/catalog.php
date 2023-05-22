@@ -6,7 +6,7 @@
         Tag.idTag AS 'idTag',
         Tag.name AS 'name'
         FROM Tag
-        WHERE Tag.idTagParent IS NULL"
+        WHERE Tag.idTagParent = '0'"
     );
 ?>
 

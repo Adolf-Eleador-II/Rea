@@ -53,22 +53,6 @@
         }
     }
 
-
     header('Location: ../index.php');
     return;
 ?>
-
-
-
-<!-- 
-        $arrayTag = explode(' ',$tag);
-        $arrayTag = array_unique($arrayTag);
-
-        $value = '';
-        foreach($arrayTag as $idTag){ $value .= "('$idPost','$idTag'),"; }
-        mysqli_query(
-        $dbConnection, 
-        "INSERT INTO Tag_Post (idPost, idTag) 
-            VALUES " . mb_substr($value,0,-1)
-        );
--->

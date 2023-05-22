@@ -7,7 +7,7 @@
         Tag.idTag AS 'idTag',
         Tag.name AS 'name'
         FROM Tag
-        WHERE Tag.idTagParent IS NULL"
+        WHERE Tag.idTagParent = '0'"
     );
 ?>
 
@@ -23,18 +23,7 @@
                 <button type="button">Delete Last Tag</button>
                 <button type="button">Delete Last Block</button>
             </div>  
-            <div class="tagsTextInput">
-                <!-- <div name="select_0" class="selectsTag">
-                    <select name="select_0_tag_0">
-                        <option></option>
-                        < ?php foreach($mainTagList as $tag):?><option value="< ?=$tag['idTag']?>">< ?=$tag['name']?></option>< ?php endforeach?>
-                    </select>
-                    <select name="select_0_tag_1">
-                        <option></option>
-                        < ?php foreach($mainTagList as $tag):?><option value="< ?=$tag['idTag']?>">< ?=$tag['name']?></option>< ?php endforeach?>
-                    </select>
-                </div> -->
-            </div>
+            <div class="tagsTextInput"></div>
             <div class="contentTextInput"></div>
             <div class="footherTextInput"><button type="submit">Опубликовать</button></div>
         </div>
