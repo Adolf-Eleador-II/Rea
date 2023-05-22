@@ -43,9 +43,8 @@
                 );
             ?>
             <?php foreach($popularTagList as $tagLittle):?>
-                <div class="tagCatalog"><div class="imgTagCatalog"><img src="" onerror="this.src='img/TestImgTag.png'"></div><div class="column"><p><?=$tagLittle['name']?></p><p>ID tag: <?=$tag['idTag']?></p></div></div>
+                <div class="tagCatalog"><div class="imgTagCatalog"><img src="" onerror="this.src='img/TestImgTag.png'"></div><div class="column"><p><?=$tagLittle['name']?></p><p>ID tag: <?=$tagLittle['idTag']?></p></div></div>
             <?php endforeach?>
-            <!-- <div class="footherCatalog" id="">Показать все</div> -->
         </div>
     </div>
     <?php endforeach?>

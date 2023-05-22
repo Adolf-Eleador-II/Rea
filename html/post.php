@@ -33,9 +33,7 @@
                     </div>
                 </div>
                 <div class="tagsPost"><?=$post['tagsPost']?></div>
-                <div class="contentPost">
-                    <?=$post['contentPost']?>
-                </div>
+                <div class="contentPost"><?=$post['contentPost']?></div>
                 <div class="footherPost">
                     <button>Коментарии</button>
                     <div><?=$post['dataPost']?></div>
