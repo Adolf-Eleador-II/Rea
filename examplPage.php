@@ -30,8 +30,6 @@
                     <h1>No gods</h1>
                     <h1>No kings</h1>
                     <h1>Only chickens</h1>
-
-                    <!-- <h1>And You: </h1> -->
                 </div>
             </div>
             
@@ -67,7 +65,7 @@
                                 <p class="textPost">Cow Master</p>
                             </div>
                             <div class="contentPost">
-                                <div class="imgPost"><img src="img/Duck.gif"></div>
+                                <div class="imgPost">GG</div>
                             </div>
                             <div class="footherPost">
                                 <button>Коментарии</button>

@@ -59,33 +59,6 @@
     border-radius: 10px;
 }
 
-.commentsPost{
-    flex-direction: column;
-    gap: 5px;
-}
-.commentPost{ margin: 5px 0 0px 10%; }
-.containerCommentPost{
-    padding: 10px;
-    margin-right: -10px;
-    border: 1px solid black;
-    border-radius: 5px 0 0 5px;
-    border-right: 0px;
-}
-.headerCommentPost{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    background-color: white;
-    border-radius: 5px;
-}
-.contentCommentPost{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-/* .imgCommentPost{ max-width: 100%; } */
-.imgAvatarCommentPost{ width: 50px; } /*Автозамену аватарки*/
-
 
 
 

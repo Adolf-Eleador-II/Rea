@@ -22,30 +22,54 @@
 
 <!-- Название тега -->
 <!-- <div class="headerSectionPost"><h1>Tag name</h1><hr><br></div> -->
-    <?php foreach($postsList as $post):?>
-        <div class="post" id_post="<?=$post['idPost']?>">
-            <div class="containerPost">
-                <div class="headerPost">
-                    <img src="<?=$post['avatarAuthor']?>" class="imgAvatarPost" onerror="this.src='img/TestImgAvatar.png'">
-                    <div class="column">
-                        <p class="textPost"><?=$post['nameAuthor']?></p>
-                        <p class="textPost">ID user: <?=$post['idAuthor']?></p>
-                    </div>
-                </div>
-                <div class="tagsPost"><?=$post['tagsPost']?></div>
-                <div class="contentPost"><?=$post['contentPost']?></div>
-                <div class="footherPost">
-                    <button>Коментарии</button>
-                    <div><?=$post['dataPost']?></div>
-                    <div>id: <?=$post['idPost']?></div>
-                    <div>Рейтинг: <?=$post['ratingPost']?></div>
+<?php foreach($postsList as $post):?>
+    <div class="post" id_post="<?=$post['idPost']?>">
+        <div class="containerPost">
+            <div class="headerPost">
+                <img src="<?=$post['avatarAuthor']?>" class="imgAvatarPost" onerror="this.src='img/TestImgAvatar.png'">
+                <div class="column">
+                    <p class="textPost"><?=$post['nameAuthor']?></p>
+                    <p class="textPost">ID user: <?=$post['idAuthor']?></p>
                 </div>
             </div>
-            <div class="commentsPost"></div>
-
-            <!-- <div class="commentsPost">< ?php foreach($comentsList as $coment):?><div class="commentPost" id="< ?=$coment['id']?>"><div class="containerCommentPost"><div class="headerCommentPost"><!-- коммит -> создатель коммита -> ник и аватар пользователя -- ><img src="img/TestProfileAvatar.png" class="imgAvatarCommentPost"><p class="textCommentPost">Cow Master I</p></div><div class="contentCommentPost"><!-- коммит -> контент комита -> содержание коммита -- ><div class="textCommentPost"><p>Now, we can devour the gods, together!</p></div><!-- коммит -> контент комита -> содержание коммита -- ><div class="imgCommentPost"><img src="img/Togetha.png"></div></div></div><div class="commentsPost"></div></div>< ?php endforeach?></div> -->
-
+            <div class="tagsPost"><?=$post['tagsPost']?></div>
+            <div class="contentPost"><?=$post['contentPost']?></div>
+            <div class="footherPost">
+                <button>Коментарии</button>
+                <div><?=$post['dataPost']?></div>
+                <div>id: <?=$post['idPost']?></div>
+                <div>Рейтинг: <?=$post['ratingPost']?></div>
+            </div>
         </div>
-    <?php endforeach?>
+        <div class="comments">
+            <?php
+                session_start();
+                require_once './php/dbConnect.php';
+                $comments = mysqli_query($dbConnection,
+                "SELECT
+                Comment.idComment AS 'idComment',
+                Comment.content AS 'content',
+                User.idUser AS 'idUser',
+                User.name AS 'name',
+                User.avatar AS 'avatar'
 
-
+                FROM Comment,User
+                WHERE Comment.idUser = User.idUser AND Comment.idPostParent = " . $post['idPost']);
+            ?>
+            <?php foreach($comments as $comment):?>
+            <div class="comment" id_comment="<?=$comment['idComment']?>">
+                <div class="containerComment">
+                    <div class="headerComment">
+                        <img src="<?=$comment['avatar']?>" class="imgAvatarComment">
+                        <div class="column">
+                            <p class="textComment"><?=$comment['name']?></p>
+                            <p class="textComment">ID: <?=$comment['idUser']?></p>
+                        </div>
+                    </div>
+                    <div class="contentComment"><?=$comment['content']?></div>
+                </div>
+            </div>
+            <?php endforeach ?>
+        </div>
+    </div>
+<?php endforeach?>

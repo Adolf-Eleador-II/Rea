@@ -1,0 +1,27 @@
+
+.comments{
+    flex-direction: column;
+    gap: 5px;
+}
+.comment{ margin: 5px 0 0px 10%; }
+.containerComment{
+    padding: 10px;
+    margin-right: -10px;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    border-right: 0px;
+}
+.headerComment{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.contentComment{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* .imgComment{ max-width: 100%; } */
+.imgAvatarComment{ width: 50px; } /*Автозамену аватарки*/

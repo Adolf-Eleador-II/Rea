@@ -23,10 +23,10 @@ for(i = 0; i < buttonCommentsPost.length; i++){
     buttonCommentsPost[i].click();
 }
 function wrapComments(button){
-    button.closest(".post").querySelector(".commentsPost").setAttribute("style","display: none;");
+    button.closest(".post").querySelector(".comments").setAttribute("style","display: none;");
     button.onclick = function() {unwrapComments(this)};
 }
 function unwrapComments(button){
-    button.closest(".post").querySelector(".commentsPost").setAttribute("style","display: flex;");
+    button.closest(".post").querySelector(".comments").setAttribute("style","display: flex;");
     button.onclick = function() {wrapComments(this)};
 }
