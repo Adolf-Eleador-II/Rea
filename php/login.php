@@ -20,7 +20,6 @@
 	$_SESSION['user'] = [
 		"id" => $user['idUser'],
 		"name" => $user['name'],
-		"email" => $user['email'],
 		"avatar" => $user['avatar']
 	];
 

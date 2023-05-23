@@ -3,7 +3,6 @@
     require_once 'dbConnect.php';
 
     $nameUser  = $_POST['regName'];
-    $emailUser = $_POST['regEmail'];
     $passUser  = md5($_POST['regPass']);
 
     $pathUser = 'uploads/avatar/' . time() . $_FILES['regAvatar']['name'];
@@ -13,8 +12,8 @@
 
     mysqli_query(
     $dbConnection, 
-    "INSERT INTO User (`name`, email, pass, avatar) 
-        VALUES ('$nameUser', '$emailUser', '$passUser', '$pathUser')"
+    "INSERT INTO User (`name`, pass, avatar) 
+        VALUES ('$nameUser', '$passUser', '$pathUser')"
     );
 
     header('Location: ../index.php');
