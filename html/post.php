@@ -1,5 +1,5 @@
 <?php
-    require_once './php/dbConnect.php';
+    require_once 'php/dbConnect.php';
     $postsList = mysqli_query(
         $dbConnection,
         "SELECT 
@@ -42,9 +42,18 @@
             </div>
         </div>
         <div class="comments">
+            
+            <div class="comment" id_comment="<?=$comment['idComment']?>">
+                <form class="containerComment contentComment" method="post" action="php/commentInput.php">
+                    <input name="idPost" value="<?=$post['idPost']?>" type="hidden"></input>
+                    <textarea name="commentInput"></textarea>
+                    <button>Отправить</button>
+                </form>
+            </div>
+
             <?php
                 session_start();
-                require_once './php/dbConnect.php';
+                require_once 'php/dbConnect.php';
                 $comments = mysqli_query($dbConnection,
                 "SELECT
                 Comment.idComment AS 'idComment',
@@ -54,13 +63,14 @@
                 User.avatar AS 'avatar'
 
                 FROM Comment,User
-                WHERE Comment.idUser = User.idUser AND Comment.idPostParent = " . $post['idPost']);
+                WHERE Comment.idUser = User.idUser AND Comment.idPostParent = " . $post['idPost'] . "
+                ORDER BY Comment.data DESC");
             ?>
             <?php foreach($comments as $comment):?>
             <div class="comment" id_comment="<?=$comment['idComment']?>">
                 <div class="containerComment">
                     <div class="headerComment">
-                        <img src="<?=$comment['avatar']?>" class="imgAvatarComment">
+                        <img src="<?=$comment['avatar']?>" class="imgAvatarComment" onerror="this.src='img/TestImgAvatar.png'">
                         <div class="column">
                             <p class="textComment"><?=$comment['name']?></p>
                             <p class="textComment">ID: <?=$comment['idUser']?></p>

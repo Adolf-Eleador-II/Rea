@@ -1,6 +1,6 @@
 
 <?php
-    require_once './php/dbConnect.php';
+    require_once 'php/dbConnect.php';
     $mainTagList = mysqli_query(
         $dbConnection,
         "SELECT 
@@ -13,7 +13,7 @@
 
 
 
-<form id="sectionTextInput" name="textInput" method="post" action="./php/textInput.php" enctype="multipart/form-data">
+<form id="sectionTextInput" name="textInput" method="post" action="php/textInput.php" enctype="multipart/form-data">
     <div class="textInput">
         <div class="containerTextInput">
             <div class="bottonBarTextInput">

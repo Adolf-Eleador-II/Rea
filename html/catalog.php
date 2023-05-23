@@ -1,5 +1,5 @@
 <?php
-    require_once './php/dbConnect.php';
+    require_once 'php/dbConnect.php';
     $mainTagList = mysqli_query(
         $dbConnection,
         "SELECT 
@@ -32,7 +32,7 @@
     <div class="catalog">
         <div class="headerCatalog"><h1>Tag: <?=$tag['name']?></h1><hr></div>
         <div class="tagsCatalog">
-            <?php require_once './php/dbConnect.php';
+            <?php require_once 'php/dbConnect.php';
                 $popularTagList = mysqli_query(
                     $dbConnection,
                     "SELECT 

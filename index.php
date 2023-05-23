@@ -46,7 +46,6 @@
             <?php include 'html/reg.html'?>
         <?php endif;?>
         <script src="js/unwrap.js" type="text/javascript"></script>
-        <script src="js/comment.js" type="text/javascript"></script>
         <script src="js/textInput.js" type="text/javascript"></script>
         <script src="js/form.js"   type="text/javascript"></script>
     </body>

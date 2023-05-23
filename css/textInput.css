@@ -1,6 +1,8 @@
 
 textarea{
-    /* height: 250px; */
+    resize: none;
+    display: block;
+    /* height: auto; */
     padding: 10px;
 }
 
