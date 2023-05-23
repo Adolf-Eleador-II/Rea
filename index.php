@@ -33,7 +33,9 @@
 
             <section class="sectionCatalog">
                 <div class="catalogs">
-                    <?php include 'html/user.php'?>
+                    <?php if(isset($_SESSION['user'])):?>
+                        <?php include 'html/user.php'?>
+                    <?php endif; ?>
                     <?php include 'html/catalog.php'?>
                 </div>
             </section>
