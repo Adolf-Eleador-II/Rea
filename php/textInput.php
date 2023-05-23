@@ -22,8 +22,8 @@
     if($content != ''){
         mysqli_query(
             $dbConnection, 
-            "INSERT INTO Post (content, idUser, rating) 
-                VALUES ('$content','$user','0')"
+            "INSERT INTO Post (content, idUser) 
+                VALUES ('$content','$user')"
         );
         
         $idPost = mysqli_insert_id($dbConnection);

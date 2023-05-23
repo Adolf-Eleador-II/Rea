@@ -45,9 +45,9 @@
             <?php include 'html/login.html'?>
             <?php include 'html/reg.html'?>
         <?php endif;?>
-        <script src="js/unwrap.js" type="text/javascript"></script>
-        <script src="js/textInput.js" type="text/javascript"></script>
+        <script src="js/post.js" type="text/javascript"></script>
         <script src="js/form.js"   type="text/javascript"></script>
+        <?php if(isset($_SESSION['user'])):?><script src="js/textInput.js" type="text/javascript"></script><?php endif;?>
     </body>
 
 </html>

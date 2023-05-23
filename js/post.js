@@ -30,3 +30,13 @@ function unwrapComments(button){
     button.closest(".post").querySelector(".comments").setAttribute("style","display: flex;");
     button.onclick = function() {wrapComments(this)};
 }
+
+
+
+
+
+
+
+
+
+

@@ -6,7 +6,6 @@
         Post.idPost  AS 'idPost',
         Post.content AS 'contentPost',
         Post.data    AS 'dataPost',
-        Post.rating  AS 'ratingPost',
         User.idUser  AS 'idAuthor',
         User.name    AS 'nameAuthor',
         User.avatar  AS 'avatarAuthor',
@@ -38,7 +37,6 @@
                 <button>Коментарии</button>
                 <div><?=$post['dataPost']?></div>
                 <div>id: <?=$post['idPost']?></div>
-                <div>Рейтинг: <?=$post['ratingPost']?></div>
             </div>
         </div>
         <div class="comments">
