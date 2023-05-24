@@ -40,15 +40,15 @@
             </div>
         </div>
         <div class="comments">
-            
-            <div class="comment" id_comment="<?=$comment['idComment']?>">
-                <form class="containerComment contentComment" method="post" action="php/commentInput.php">
-                    <input name="idPost" value="<?=$post['idPost']?>" type="hidden"></input>
-                    <textarea name="commentInput"></textarea>
-                    <button>Отправить</button>
-                </form>
-            </div>
-
+            <?php if(isset($_SESSION['user'])):?>
+                <div class="comment" id_comment="<?=$comment['idComment']?>">
+                    <form class="containerComment contentComment" method="post" action="php/commentInput.php">
+                        <input name="idPost" value="<?=$post['idPost']?>" type="hidden"></input>
+                        <textarea name="commentInput"></textarea>
+                        <button>Отправить</button>
+                    </form>
+                </div>
+            <?php else:?>
             <?php
                 session_start();
                 require_once 'php/dbConnect.php';
