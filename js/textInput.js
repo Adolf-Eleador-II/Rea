@@ -60,7 +60,7 @@ function createSelectTag(idSelect,idTag,idParent){
     block.name = "select_" + idSelect + "_tag_" + idTag;
     block.onchange = function(){
     block.name = "select_" + idSelect + "_tag_" + idTag;
-        let del = document.querySelectorAll("select[name='select_"+idSelect+"_tag_"+idTag+"'] ~ select");
+        let del = document.querySelectorAll("select[name='select_"+idSelect+"_tag_"+idTag+"'] ~ *");
         for(let j=0;j<del.length;j++){ del[j].remove(); }
         if(this.value!=''){
             this.after(createSelectTag(idSelect,idTag+1,this.value));
