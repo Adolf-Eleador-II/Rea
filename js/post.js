@@ -38,5 +38,13 @@ function unwrapComments(button){
 
 
 
+allTagLink = document.querySelectorAll("*[id_tag]");
+// alert(allTagLink.length);
+for(i=0;i<allTagLink.length;i++){
+    // alert(allTagLink[i].getAttribute("id_tag"));
+    let j = allTagLink[i].getAttribute("id_tag");
+    allTagLink[i].setAttribute("href","index.php?id=" + j);
+    // allTagLink[i].onclick = function(){ alert(allTagLink.length) }
+}
 
 

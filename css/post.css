@@ -1,6 +1,7 @@
 
 .sectionPost{
     /*max-width: 832px;*/
+    width: 100%;
     margin: 10px;
 }
 
@@ -9,6 +10,9 @@
     flex-direction: column;
     min-width: 417px;
     gap: 50px;
+}
+.headerSectionPost{
+    height: 0;
 }
 .post{
     display: flex;

@@ -1,5 +1,9 @@
 <?php
     require_once 'php/dbConnect.php';
+
+    if($_GET['id']!=0){ $findTag = " FROM Post,User,Tag_Post WHERE Post.idUser=User.idUser AND Post.idPost=Tag_Post.idPost AND Tag_Post.idTag=" . $_GET['id']; }
+    else{ $findTag = " FROM Post,User WHERE Post.idUser=User.idUser "; }
+
     $postsList = mysqli_query(
         $dbConnection,
         "SELECT 
@@ -10,17 +14,22 @@
         User.name    AS 'nameAuthor',
         User.avatar  AS 'avatarAuthor',
 
-        (SELECT GROUP_CONCAT('<div id=',Tag.idTag,'>',Tag.name,'</div>' SEPARATOR '') FROM Tag, Tag_Post WHERE
+        (SELECT GROUP_CONCAT('<a id_tag=',Tag.idTag,'>',Tag.name,'</a>' SEPARATOR '') FROM Tag, Tag_Post WHERE
         Tag.idTag=Tag_Post.idTag and Tag_Post.idPost=Post.idPost) AS 'tagsPost'
-        
-        FROM Post, User WHERE Post.idUser=User.idUser
-        ORDER BY Post.data DESC"
+        " . $findTag . " ORDER BY Post.data DESC"
     );
 ?>
 
+<?php if($_GET['id']!=0):?>
+    <?php
+        require_once 'php/dbConnect.php';
+        $findTag = mysqli_query($dbConnection, "SELECT * FROM Tag WHERE idTag=" . $_GET['id']);
+    ?>
+    <?php foreach($findTag as $gg):?>
+        <div class="headerSectionPost"><h1><?=$gg['name']?></h1><hr></div>
+    <?php endforeach?>
+<?php endif;?>
 
-<!-- Название тега -->
-<!-- <div class="headerSectionPost"><h1>Tag name</h1><hr><br></div> -->
 <?php foreach($postsList as $post):?>
     <div class="post" id_post="<?=$post['idPost']?>">
         <div class="containerPost">
