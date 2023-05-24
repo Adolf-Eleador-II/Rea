@@ -48,7 +48,7 @@
                         <button>Отправить</button>
                     </form>
                 </div>
-            <?php else:?>
+            <?php endif;?>
             <?php
                 session_start();
                 require_once 'php/dbConnect.php';
