@@ -37,7 +37,7 @@
                 <img src="<?=$post['avatarAuthor']?>" class="imgAvatarPost" onerror="this.src='img/TestImgAvatar.png'">
                 <div class="column">
                     <p class="textPost"><?=$post['nameAuthor']?></p>
-                    <p class="textPost">ID user: <?=$post['idAuthor']?></p>
+                    <p class="textPost">ID: <?=$post['idAuthor']?></p>
                 </div>
             </div>
             <div class="tagsPost"><?=$post['tagsPost']?></div>
@@ -45,7 +45,7 @@
             <div class="footherPost">
                 <button>Коментарии</button>
                 <div><?=$post['dataPost']?></div>
-                <div>id: <?=$post['idPost']?></div>
+                <div>ID: <?=$post['idPost']?></div>
             </div>
         </div>
         <div class="comments">
