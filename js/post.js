@@ -1,6 +1,5 @@
 let i;
 
-//Скрытие излишнего контента и добавление кнопки вскрытия контента
 let contentPost = document.querySelectorAll(".contentPost");
 for(i = 0; i < contentPost.length; i++){
     if(contentPost[i].clientHeight > 350 && contentPost[i].querySelectorAll("div").length > 1){
@@ -16,7 +15,6 @@ for(i = 0; i < contentPost.length; i++){
     }
 }
 
-//Переключатель скрытия комментов
 let buttonCommentsPost = document.querySelectorAll(".footherPost>button");
 for(i = 0; i < buttonCommentsPost.length; i++){
     buttonCommentsPost[i].onclick = function() {wrapComments(this)};
@@ -39,12 +37,9 @@ function unwrapComments(button){
 
 
 allTagLink = document.querySelectorAll("*[id_tag]");
-// alert(allTagLink.length);
 for(i=0;i<allTagLink.length;i++){
-    // alert(allTagLink[i].getAttribute("id_tag"));
     let j = allTagLink[i].getAttribute("id_tag");
     allTagLink[i].setAttribute("href","index.php?id=" + j);
-    // allTagLink[i].onclick = function(){ alert(allTagLink.length) }
 }
 
 

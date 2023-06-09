@@ -12,11 +12,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/post.css">
-        <link rel="stylesheet" href="css/comment.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/catalog.css">
         <link rel="stylesheet" href="css/textInput.css">
-        <link rel="stylesheet" href="css/user.css">
     </head>
 
     <body style="background-color: antiquewhite;">
